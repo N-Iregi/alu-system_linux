@@ -6,6 +6,35 @@
 #include <stddef.h>
 #include <stdint.h>
 
+/* Constants missing from the elf.h of older systems */
+#ifndef EM_AARCH64
+#define EM_AARCH64 183
+#endif
+#ifndef EM_RISCV
+#define EM_RISCV 243
+#endif
+#ifndef EM_SPARC32PLUS
+#define EM_SPARC32PLUS 18
+#endif
+#ifndef EM_SPARCV9
+#define EM_SPARCV9 43
+#endif
+#ifndef EM_X86_64
+#define EM_X86_64 62
+#endif
+#ifndef STT_GNU_IFUNC
+#define STT_GNU_IFUNC 10
+#endif
+#ifndef STB_GNU_UNIQUE
+#define STB_GNU_UNIQUE 10
+#endif
+#ifndef SHT_SYMTAB_SHNDX
+#define SHT_SYMTAB_SHNDX 18
+#endif
+#ifndef SHN_XINDEX
+#define SHN_XINDEX 0xffff
+#endif
+
 #define ELF_OK 0
 #define ELF_NOFILE 1
 #define ELF_BADFMT 2
