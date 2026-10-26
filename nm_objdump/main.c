@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    printf("Learning Makefiles!\n");
-    return (0);
+	printf("Learning Makefiles!\n");
+	return (0);
 }
