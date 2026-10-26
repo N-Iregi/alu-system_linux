@@ -5,7 +5,7 @@ NM_SRC = $(COMMON) nm_sym.c hnm.c
 OBJ_SRC = $(COMMON) objdump_info.c objdump_dump.c hobjdump.c
 HDR = elf_tools.h
 
-.PHONY: all clean
+.PHONY: all hnm hobjdump clean
 
 all: hnm hobjdump
 
