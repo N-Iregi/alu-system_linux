@@ -68,12 +68,12 @@ void print_entry(pid_t pid, struct user_regs_struct *r)
 
 	if (LEVEL == 0)
 	{
-		printf("%llu\n", r->orig_rax);
+		printf("%lu\n", (unsigned long)r->orig_rax);
 		fflush(stdout);
 		return;
 	}
 	if (!sc)
-		printf("syscall_%llu", r->orig_rax);
+		printf("syscall_%lu", (unsigned long)r->orig_rax);
 	else
 		printf("%s", sc->name);
 	if (LEVEL >= 3)
